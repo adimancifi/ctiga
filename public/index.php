@@ -110,8 +110,8 @@ switch (ENVIRONMENT)
  * This variable must contain the name of your "system" directory.
  * Set the path if it is not in the same directory as this file.
 */
-// $system_path = dirname(__DIR__).DIRECTORY_SEPARATOR.'vendor/codeigniter/framework/system';
-$system_path = dirname(__DIR__).DIRECTORY_SEPARATOR.'system';
+// $system_path = dirname(__DIR__).DIRECTORY_SEPARATOR.'system';
+$system_path = dirname(__DIR__).'/vendor/codeigniter/framework/system';
 
 
 /*
@@ -129,7 +129,7 @@ $system_path = dirname(__DIR__).DIRECTORY_SEPARATOR.'system';
  *
  * NO TRAILING SLASH!
 */
-$application_folder = file_exists(dirname(__DIR__).'/.env') ? dirname(__DIR__).'/app' : dirname(__DIR__).'/installer/app';
+$application_folder = file_exists(dirname(__DIR__).'/.env') ? dirname(__DIR__).'/app' : dirname(__DIR__).'/vendor/adimancifi/ctiga-installer/application';
 
 /*
  *---------------------------------------------------------------
