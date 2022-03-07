@@ -430,7 +430,7 @@ class Install extends CI_Controller
 
 	protected function _create_file_env($configs)
 	{
-		$content = env($configs);
+		$content = _env($configs);
 		$file = FCPATH . '.env';
 		write_file($file, $content);
 	}
