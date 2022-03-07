@@ -1,8 +1,8 @@
-## My Own CiFire Engine
+## My Own cTiga Engine
 If anyone geting this engine and found some bug, you must slove it self. ;)
 
 ## Download
-composer create-project adimancifi/cifirecms-adiman
+composer create-project adimancifi/ctiga:dev-master ctiga-project
 
 ## Minimum System Requirements
 ```
