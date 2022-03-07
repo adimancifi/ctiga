@@ -1,20 +1,20 @@
 {
-    "description": "CiFireCMS Framework",
-    "name": "cifirecms/cifirecms",
-    "type": "project",
-    "license": "MIT",
-    "homepage": "https://www.cifirecms.org",
-    "support": {
-        "source": "https://github.com/CiFireCMS/cifirecms"
-    },
-    "minimum-stability": "dev",
-    "require": {
+	"description": "CiFireCMS Adiman",
+	"name": "adimancifi/cifirecms-adiman",
+	"type": "project",
+	"license": "MIT",
+	"homepage": "https://github.com/adimancifi/cifirecms-adiman",
+	"support": {
+		"source": "https://github.com/adimancifi/cifirecms-adiman"
+	},
+	"minimum-stability": "dev",
+	"require": {
 		"php": "^7.3 || ^8.0",
-        "vlucas/phpdotenv": "^4.1",
-        "jenssegers/blade": "^1.1",
-        "fakerphp/faker": "1.19.x-dev"
-    },
-    "config":{
-        "platform-check": false
-    }
+		"vlucas/phpdotenv": "^4.1",
+		"jenssegers/blade": "^1.1",
+		"fakerphp/faker": "1.19.x-dev"
+	},
+	"config":{
+		"platform-check": false
+	}
 }
