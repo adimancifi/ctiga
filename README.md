@@ -1,6 +1,9 @@
 ## My Own CiFire Engine
 If anyone geting this engine and found some bug, you must slove it self. ;)
 
+### Install
+composer create-project adimancifi/cifirecms-adiman
+
 ## Minimum System Requirements
 ```
 +--------------+----------------+
