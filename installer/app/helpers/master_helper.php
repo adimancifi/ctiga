@@ -661,7 +661,7 @@ return $content;
 
 
 
-function env($conf) {
+function _env($conf) {
 $ci_env   = $conf['ci_env'];
 $site_url = $conf['site_url'];
 $key      = $conf['key'];
