@@ -1,6 +1,3 @@
-# CiFireCMS - Gratis Rasa Premium
-CiFireCMS adalah platform CMS open source gratis Indonesia dibuat menggunakan framework CodeIgniter3 dengan konsep yang menarik dan mudah digunakan oleh siapa saja.
-
 
 ## Minimum System Requirements
 ```
@@ -30,17 +27,6 @@ CiFireCMS adalah platform CMS open source gratis Indonesia dibuat menggunakan fr
 ```
 
 
-## Dowwnload via composer
-* Untuk mengambil rilis terakhir :
-```
-composer create-project cifirecms/cifirecms cifirecms-project
-```
-
-* Untuk mengambil paket dari master (kemungkinan terdapat error/bugs) :
-```
-composer create-project cifirecms/cifirecms:dev-master cifirecms-project
-```
-
 
 ## Permission
 Ubah user permission folder dan file berikut menjadi ``0777``.
@@ -67,9 +53,9 @@ cifirecms
 Standard **.htaccess** configuration.
 ```
 RewriteEngine On
-RewriteCond $1 !^(index\.php|resources|robots\.txt)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
 RewriteRule ^(.*)$ index.php/$1 [L,QSA]
 ```
 
@@ -107,23 +93,3 @@ RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
 RewriteRule ^ http://%1%{REQUEST_URI} [L,NE,R=301]
 ```
-
-
-### Environment
-Jika web sudah siap di online-kan silahkan ubah kode pada ``.env`` cari code ``CI_ENV=development`` edit menadi ``CI_ENV=production``
-
-
-## Backend
-* Untuk mengakses halaman administrator kunjungi link ``http://your-web-domain/l-admin``
-* Masukan Username dan Password seperti pada awal instalasi.
-
-
-## Official Links
-* Official       : https://www.cifirecms.org
-* GitHub         : https://github.com/CiFireCMS
-* Facebook Page  : https://web.facebook.com/cifirecms
-* Facebook group : https://web.facebook.com/groups/cifirecms
-
-
-## License
-CiFireCMS is licensed under the MIT License.
