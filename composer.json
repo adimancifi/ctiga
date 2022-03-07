@@ -1,11 +1,11 @@
 {
-	"description": "CiFireCMS Adiman",
-	"name": "adimancifi/cifirecms-adiman",
+	"description": "CTiga Adiman",
+	"name": "adimancifi/ctiga",
 	"type": "project",
 	"license": "MIT",
-	"homepage": "https://github.com/adimancifi/cifirecms-adiman",
+	"homepage": "https://github.com/adimancifi/ctiga",
 	"support": {
-		"source": "https://github.com/adimancifi/cifirecms-adiman"
+		"source": "https://github.com/adimancifi/ctiga"
 	},
 	"minimum-stability": "dev",
 	"require": {
