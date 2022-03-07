@@ -2,7 +2,8 @@
 If anyone geting this engine and found some bug, you must slove it self. ;)
 
 ## Download
-composer create-project adimancifi/ctiga:dev-master ctiga-project
+- composer create-project adimancifi/ctiga:dev-master ctiga-project
+- composer update
 
 ## Minimum System Requirements
 ```
