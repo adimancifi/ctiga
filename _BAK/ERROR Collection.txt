@@ -1,0 +1,76 @@
+
+
+ERROR
+
+SUDAH FIKS  -----------------------------------------------------------
+
+A PHP Error was encountered
+
+Severity: Notice
+Message: Trying to access array offset on value of type null
+Filename: libraries/Cifire_Role.php
+Line Number: 62
+
+Backtrace:
+
+File: /var/www/html/app/libraries/Cifire_Role.php
+Line: 62
+Function: _error_handler
+
+File: /var/www/html/app/controllers/l-admin/Auth.php
+Line: 124
+Function: access
+
+File: /var/www/html/app/controllers/l-admin/Auth.php
+Line: 62
+Function: _submit_login
+
+File: /var/www/html/public/index.php
+Line: 351
+Function: require_once
+
+SUDAH FIKS  -----------------------------------------------------------
+
+
+
+cifirecms\app\core\Web_Controller.php --------------------------------------------------
+
+- Perbaikan kode fungsi theme_asset().
+
+BEFORE :
+public function theme_asset($asset = '')
+{
+	return site_url('themes/'.theme_active('folder').'/'.$asset);
+}
+
+
+AFTER :
+public function theme_asset($asset = '')
+{
+	$result = '';
+
+	if (file_exists($this->_theme_folder.'/'.$asset))
+	{
+		$result = site_url($this->_theme_folder.'/'.$asset);
+	}
+
+	return $result
+}
+--------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
